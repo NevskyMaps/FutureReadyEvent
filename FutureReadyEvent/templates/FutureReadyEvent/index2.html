@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Columns</title>
+
+        <!-- OpenLayers -->
+    <script src="https://cdn.jsdelivr.net/npm/ol@v8.0.0/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.0.0/ol.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'FutureReadyEvent/style.css' %}">
+
+    <script src="{% static 'FutureReadyEvent/script.js' %}" defer></script>
+
+
+
+</head>
+<body>
+    <div class="d-flex h-100">
+        <div class="left-column col-6 overflow-auto bg-dark" onscroll="handleScroll()" style="height: 100vh;">
+            <div class="content-section p-3 mb-3 border bg-light" data-right-content="Content for Right 1">
+
+                <h1> FULLY FUNCTIONAL SHITHEAD</h1>
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis eu turpis ultrices tempus. Quisque nisi augue, maximus sit amet rutrum sit amet, lacinia at libero. Fusce enim enim, gravida consequat iaculis et, tincidunt vitae quam. Morbi sit amet egestas sem. Cras sagittis nec massa eu porta. Sed vitae felis iaculis, iaculis enim at, interdum massa. Vivamus sed diam pulvinar, volutpat magna ac, euismod lectus.<br><br>
+
+                Suspendisse ut metus ut tellus volutpat sodales. Mauris tempus massa ut magna pretium blandit. Vestibulum quis arcu consequat, tincidunt odio eu, placerat ligula. Duis dignissim tellus at consectetur tempus. Vestibulum at eros enim. Vestibulum mollis massa ante, eget condimentum sem sagittis a. Nullam consectetur elit eget arcu auctor pulvinar. Morbi convallis metus cursus molestie imperdiet. Cras magna mi, ullamcorper non urna in, euismod suscipit purus. Curabitur nisi erat, aliquet id libero ac, dictum porttitor neque. Vivamus non accumsan quam. Nam lacinia risus purus, at imperdiet orci finibus vel. Pellentesque sit amet pretium dui. Mauris laoreet libero felis, ac efficitur nibh fringilla quis. Donec congue scelerisque eros ac aliquet.<br><br>
+
+                <h2>Mapping the Unmmapable</h2>
+                Praesent augue mauris, aliquet vitae augue et, tempor malesuada turpis. Pellentesque at gravida sapien, posuere convallis nulla. Pellentesque diam velit, mattis ac venenatis nec, tempor et odio. Ut maximus tellus metus, vel ornare est elementum eget. Ut nec vehicula nisi, ac tristique est. Duis bibendum luctus libero nec dapibus. Sed interdum neque nunc, eu malesuada nulla scelerisque at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;<br><br>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 733.46 315">
+  <defs>
+    <style>
+
+
+
+
+
+    </style>
+  </defs>
+  <g id="Light">
+    <path class="cls-1" d="M274.93,318.93,545.17,198.42c21.66-9.66,21.66-38.54,0-48.21L274.93,29.7c-24.49-10.92-49.88,13.33-37.76,36l51.6,96.64a25.19,25.19,0,0,1,0,23.87l-51.6,96.64C225.05,305.61,250.44,329.85,274.93,318.93Z" transform="translate(-34.62 -17)"/>
+  </g>
+  <g id="Dark">
+    <g>
+      <path class="cls-2" d="M85.75,319.3,356,198.79c21.66-9.67,21.66-38.55,0-48.21L85.75,30.07C61.27,19.15,35.87,43.39,48,66.11l51.59,96.63a25.21,25.21,0,0,1,0,23.88L48,283.26C35.87,306,61.27,330.22,85.75,319.3Z" transform="translate(-34.62 -17)"/>
+      <path class="cls-2" d="M85.5,319.05,355.74,198.54c21.67-9.66,21.67-38.54,0-48.2L85.5,29.82C61,18.9,35.62,43.15,47.75,65.86L99.34,162.5a25.15,25.15,0,0,1,0,23.88L47.75,283C35.62,305.73,61,330,85.5,319.05Z" transform="translate(-34.62 -17)"/>
+      <path class="cls-2" d="M85.5,319.05,355.74,198.54c21.67-9.66,21.67-38.54,0-48.2L85.5,29.82C61,18.9,35.62,43.15,47.75,65.86L99.34,162.5a25.15,25.15,0,0,1,0,23.88L47.75,283C35.62,305.73,61,330,85.5,319.05Z" transform="translate(-34.62 -17)"/>
+      <path class="cls-2" d="M471.59,319.18,741.83,198.66c21.67-9.66,21.67-38.54,0-48.2L471.59,30C447.11,19,421.71,43.27,433.84,66l51.59,96.63a25.15,25.15,0,0,1,0,23.88l-51.59,96.63C421.71,305.85,447.11,330.1,471.59,319.18Z" transform="translate(-34.62 -17)"/>
+      <path class="cls-2" d="M471.35,318.93,741.59,198.42c21.66-9.66,21.66-38.54,0-48.21L471.35,29.7c-24.49-10.92-49.88,13.33-37.75,36l51.59,96.64a25.19,25.19,0,0,1,0,23.87L433.6,282.89C421.47,305.61,446.86,329.85,471.35,318.93Z" transform="translate(-34.62 -17)"/>
+      <path class="cls-2" d="M471.35,318.93,741.59,198.42c21.66-9.66,21.66-38.54,0-48.21L471.35,29.7c-24.49-10.92-49.88,13.33-37.75,36l51.59,96.64a25.19,25.19,0,0,1,0,23.87L433.6,282.89C421.47,305.61,446.86,329.85,471.35,318.93Z" transform="translate(-34.62 -17)"/>
+    </g>
+  </g>
+</svg>
+
+            <div class="content-section p-3 mb-3 border bg-light" data-right-content="Content for Right 2">
+                <h1>INCREDIBLE SATELLITAL IMAGERY</h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis eu turpis ultrices tempus. Quisque nisi augue, maximus sit amet rutrum sit amet, lacinia at libero. Fusce enim enim, gravida consequat iaculis et, tincidunt vitae quam. Morbi sit amet egestas sem. Cras sagittis nec massa eu porta. Sed vitae felis iaculis, iaculis enim at, interdum massa. Vivamus sed diam pulvinar, volutpat magna ac, euismod lectus.<br><br>
+
+                Suspendisse ut metus ut tellus volutpat sodales. Mauris tempus massa ut magna pretium blandit. Vestibulum quis arcu consequat, tincidunt odio eu, placerat ligula. Duis dignissim tellus at consectetur tempus. Vestibulum at eros enim. Vestibulum mollis massa ante, eget condimentum sem sagittis a. Nullam consectetur elit eget arcu auctor pulvinar. Morbi convallis metus cursus molestie imperdiet. Cras magna mi, ullamcorper non urna in, euismod suscipit purus. Curabitur nisi erat, aliquet id libero ac, dictum porttitor neque. Vivamus non accumsan quam. Nam lacinia risus purus, at imperdiet orci finibus vel. Pellentesque sit amet pretium dui. Mauris laoreet libero felis, ac efficitur nibh fringilla quis. Donec congue scelerisque eros ac aliquet.<br><br>
+
+                <h2>Get Ready For Awesomeness</h2>
+                Praesent augue mauris, aliquet vitae augue et, tempor malesuada turpis. Pellentesque at gravida sapien, posuere convallis nulla. Pellentesque diam velit, mattis ac venenatis nec, tempor et odio. Ut maximus tellus metus, vel ornare est elementum eget. Ut nec vehicula nisi, ac tristique est. Duis bibendum luctus libero nec dapibus. Sed interdum neque nunc, eu malesuada nulla scelerisque at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;<br><br>
+            </div>
+
+            <div class="content-section p-3 mb-3 border bg-light" data-right-content="Content for Right 3">
+                <h1>MIND YOUR OWN BUSINESS</h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis eu turpis ultrices tempus. Quisque nisi augue, maximus sit amet rutrum sit amet, lacinia at libero. Fusce enim enim, gravida consequat iaculis et, tincidunt vitae quam. Morbi sit amet egestas sem. Cras sagittis nec massa eu porta. Sed vitae felis iaculis, iaculis enim at, interdum massa. Vivamus sed diam pulvinar, volutpat magna ac, euismod lectus.<br><br>
+
+                Suspendisse ut metus ut tellus volutpat sodales. Mauris tempus massa ut magna pretium blandit. Vestibulum quis arcu consequat, tincidunt odio eu, placerat ligula. Duis dignissim tellus at consectetur tempus. Vestibulum at eros enim. Vestibulum mollis massa ante, eget condimentum sem sagittis a. Nullam consectetur elit eget arcu auctor pulvinar. Morbi convallis metus cursus molestie imperdiet. Cras magna mi, ullamcorper non urna in, euismod suscipit purus. Curabitur nisi erat, aliquet id libero ac, dictum porttitor neque. Vivamus non accumsan quam. Nam lacinia risus purus, at imperdiet orci finibus vel. Pellentesque sit amet pretium dui. Mauris laoreet libero felis, ac efficitur nibh fringilla quis. Donec congue scelerisque eros ac aliquet.<br><br>
+                <h2>Arguing Against Humanity</h2>
+                Praesent augue mauris, aliquet vitae augue et, tempor malesuada turpis. Pellentesque at gravida sapien, posuere convallis nulla. Pellentesque diam velit, mattis ac venenatis nec, tempor et odio. Ut maximus tellus metus, vel ornare est elementum eget. Ut nec vehicula nisi, ac tristique est. Duis bibendum luctus libero nec dapibus. Sed interdum neque nunc, eu malesuada nulla scelerisque at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;<br><br>
+            </div>
+
+
+        </div>
+<div class="right-column bg-dark col-6 d-flex align-items-center justify-content-center bg-primary text-white" style="height: 100vh;">Default</div>
+
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,104 @@
+:root {
+--dark-color: #635bff;
+--light-color: #80e9ff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.left-column {
+    padding: 20px;
+}
+
+.right-column {
+    height: 100vh;
+}
+.content-section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Solid border with a light gray color */
+    border-radius: 10px; /* Rounded corners with a 10px radius */
+    text-align: justify;
+
+}
+
+
+.right-column {
+    position: sticky;
+    top: 0;
+    background-color: #007BFF;
+    color: white;
+}
+
+/* For WebKit browsers */
+.left-column::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+}
+
+/* For Firefox */
+.left-column {
+    scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* For Internet Explorer */
+.left-column {
+    -ms-overflow-style: none;  /* Hide scrollbar */
+}
+
+.map-container {
+    border-radius: 15px; /* Adjust this value to achieve the desired curvature */
+    overflow: hidden;    /* This ensures that the map content conforms to the rounded borders */
+
+}
+
+
+@media (max-width: 768px) { 
+    .left-column, .right-column {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+
+    }
+    
+    .right-column {
+        min-height: 100vh;
+        max-height: 100vh;
+}
+
+
+.d-flex.h-100 {
+    min-height: 100vh;
+}
+
+.left-column{
+    height: auto;  /* Remove fixed height */
+}
+
+.d-flex.h-100 {
+    align-items: flex-start;
+}
+
+html, body {
+    overflow-y: hidden;
+}
+
+svg #Dark {
+    fill: #635bff !important;
+}
+
+svg #Light {
+    fill: #80e9ff !important;
+}
+
+#Dark, #Light {
+    transition: 1s ease;
+}
+
+#Dark{
+    transform: translateX(-100%);
+}
+
+svg: hover #Dark {
+    transform: translateX(-100%);
+}

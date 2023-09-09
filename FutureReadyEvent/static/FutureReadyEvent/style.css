@@ -1,0 +1,46 @@
+:root {
+    --special-color: #F0EBD8;
+    --primary-color: #748CAB;
+    --secondary-color: #3E5C76;
+    --tertiary-color: #1D2D44;
+    --background-color: #0D1321;
+}
+
+body {
+    background-color: var(--special-color);
+}
+
+.row {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    background-color: var(--secondary-color);
+    color: white;
+    border: solid var(--primary-color) 2px;
+    border-radius: 8px;
+
+    opacity: 0;
+    transform: translateY(5vh);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#map-1 {
+    min-height: 50vh;
+    margin-bottom: 1vh;
+}
+
+#map-2 {
+    min-height: 50vh;
+    margin-bottom: 1vh;
+}
+
+#map-3 {
+    min-height: 50vh;
+    margin-bottom: 1vh;
+}
