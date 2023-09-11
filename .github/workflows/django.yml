@@ -1,0 +1,25 @@
+name: Django CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.11]  # Note: This is now only informational and won't affect the actual Python used
+
+    steps:
+    - uses: actions/checkout@v3
+    # Removed the "Set up Python" step since we are using the system's Python
+    - name: Install Dependencies
+      run: |
+        python3 --version
+   #     pip install -r requirements.txt
+    #- name: Run Tests
+     # run: |
+     #   python3 manage.py test
