@@ -22,5 +22,5 @@ urlpatterns = [
     path('bibliotecageoespacial/', include("PlanchetasIgm.urls")),
     path('download/', include("PlanchetasIgm.urls")),
     path('bibliotecageoespacial/', include("SalmonWatch.urls")),
-    path('bibliotecageoespacial/', include("FutureReadyEvent.urls")),
+    path('', include("FutureReadyEvent.urls")),
 ]

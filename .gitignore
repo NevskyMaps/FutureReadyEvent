@@ -1,0 +1,6 @@
+FutureReady.sock
+nohup.out
+/static/
+/BibliotecaGeoespacial/settings.py
+/BibliotecaGeoespacial/wsgi.py
+/BibliotecaGeoespacial/__pycache__/

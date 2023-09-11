@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-j*02xa3$@p%0_u91xb-5not*pe5_fbbuub#ezssswm)!_m-9$r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['164.92.112.78', 'geodata.zapto.org']
 
 
 # Application definition
@@ -77,26 +77,26 @@ WSGI_APPLICATION = 'BibliotecaGeoespacial.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-#         'NAME': 'FutureReady',
-#         'USER': 'postgres',
-#         'PORT': '5432',
-#         'PASSWORD': 'easypass00',
-#         'HOST': 'localhost',
-#     }
-# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.dummy',
-        'NAME': '',
-        'USER': '',
-        'PORT': '',
-        'PASSWORD': '',
-        'HOST': '',
-    }
-}
+     'default': {
+         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+         'NAME': 'django',
+         'USER': 'postgres',
+         'PORT': '5432',
+         'PASSWORD': 'easypass00',
+         'HOST': 'localhost',
+     }
+ }
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.dummy',
+#        'NAME': '',
+#        'USER': '',
+#        'PORT': '',
+#        'PASSWORD': '',
+#        'HOST': '',
+#    }
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -133,6 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
